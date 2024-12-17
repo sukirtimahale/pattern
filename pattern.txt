@@ -1,0 +1,91 @@
+1.
+*
+**
+***
+****
+*****
+
+rows = 5  # Number of rows for the pyramid
+
+for i in range(1, rows + 1):  # Outer loop for the rows
+    for j in range(i):  # Inner loop for stars in each row
+        print("*", end="")  # Print stars on the same line
+    print()  # Move to the next line after each row
+
+---------------------------------------------------------------------------------------------------------------
+2.
+*******
+******
+*****
+****
+***
+**
+*
+
+rows = 7  # Total number of rows
+
+for i in range(rows, 0, -1):  # Outer loop for rows (start from 7 and go down to 1)
+    for j in range(i):  # Inner loop for stars in each row
+        print("*", end="")  # Print stars on the same line
+    print()  # Move to the next line after each row
+
+---------------------------------------------------------------------------------------------------------------
+3.
+----*
+---**
+--***
+-****
+*****
+
+rows = 5  # Number of rows
+
+for i in range(1, rows + 1):  # Outer loop for rows
+    print("-" * (rows - i), end="")  # Print spaces (or dashes) to align stars
+    print("*" * i)  # Print stars for the current row
+
+---------------------------------------------------------------------------------------------------------------
+4.
+1
+10
+101
+1010
+10101
+
+rows = 5  # Number of rows
+
+for i in range(1, rows + 1):  # Outer loop for rows
+    for j in range(1, i + 1):  # Inner loop for numbers in each row
+        print(j % 2, end="")  # Print 1 if odd, 0 if even
+    print()  # Move to the next row
+
+-----------------------------------------------------------------------------------------------------------------
+5.
+____1
+___01
+__101
+_0101
+10101
+
+rows = 5  # Number of rows
+
+for i in range(1, rows + 1):  # Outer loop for rows
+    print("_" * (rows - i), end="")  # Print leading underscores to align the pattern
+    for j in range(1, i + 1):  # Inner loop for numbers in each row
+        print(j % 2, end="")  # Print 1 if odd, 0 if even
+    print()  # Move to the next row
+
+-----------------------------------------------------------------------------------------------------------------------
+6.
+*********
+-*******
+--*****
+---***
+----*
+
+rows = 5  # Number of rows
+
+for i in range(rows, 0, -1):  # Outer loop for rows (start from 5 and go down to 1)
+    print("-" * (rows - i), end="")  # Print dashes before stars
+    print("*" * i)  # Print stars for the current row
+
+
